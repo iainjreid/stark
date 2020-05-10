@@ -1,0 +1,26 @@
+{
+  "name": "@emphori/stark",
+  "description": "Minimal and incredibly lightweight functional programming for JavaScript",
+  "keywords": [],
+  "author": "Emphori (https://emphori.co)",
+  "contributors": [
+    "Iain Reid <iainreid382@gmail.com> (https://chaff.land)"
+  ],
+  "homepage": "https://github.com/Emphori/stark#readme",
+  "license": "MIT",
+  "main": "lib/stark.js",
+  "files": [
+    "lib/stark.js"
+  ],
+  "devDependencies": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emphori/stark.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Emphori/stark/issues"
+  }
+}
