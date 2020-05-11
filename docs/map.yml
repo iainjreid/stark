@@ -1,0 +1,37 @@
+namespace: Map
+members:
+  - name: clear
+    type: function
+    summary: Removes all of the elements from a Map object
+
+  - name: delete
+    type: function
+    summary: Removes a specified element from a Map object, returning true if the element existed and false if the element did not
+
+  - name: entries
+    type: function
+    summary: Creates a new Iterator containing an array of key -> value for each element in a Map object
+
+  - name: forEach
+    type: function
+    summary: Calls the given callback function once for every key value pair in a Map object
+
+  - name: get
+    type: function
+    summary: Return a specified element from a Map object
+
+  - name: has
+    type: function
+    summary: Returns a boolean indicating whether or not the given key exists in a Map object
+
+  - name: keys
+    type: function
+    summary: Creates a new Iterator containing each key in a Map object
+
+  - name: set
+    type: function
+    summary: Assign or update a specified element in a Map object
+
+  - name: values
+    type: function
+    summary: Creates a new Iterator containing each value in a Map object

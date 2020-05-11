@@ -12,9 +12,30 @@
   "files": [
     "lib/stark.js"
   ],
-  "devDependencies": {},
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@emphori/eslint-config": "^0.1.7",
+    "@emphori/jest-preset": "0.0.5",
+    "eslint": "^7.0.0",
+    "jest": "^26.0.1"
+  },
   "publishConfig": {
     "access": "public"
+  },
+  "eslintConfig": {
+    "extends": "@emphori",
+    "env": {
+      "jest": true
+    }
+  },
+  "jest": {
+    "preset": "@emphori/jest-preset",
+    "collectCoverageFrom": [
+      "lib/stark.js"
+    ]
   },
   "repository": {
     "type": "git",
