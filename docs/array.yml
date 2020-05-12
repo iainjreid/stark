@@ -18,7 +18,7 @@ members:
 
   - name: fill
     type: function
-    summary:
+    summary: Fill the provided Array with a given value
 
   - name: filter
     type: function

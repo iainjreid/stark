@@ -19,7 +19,7 @@ method exposed by JavaScript's standard built-in objects.
 | `copyWithin`        | Shallow copy part of an array to another location in that array         | :white_check_mark: |            |
 | `entries`           | Retrieve an iterator from an array                                      | :white_check_mark: |            |
 | `every`             | Tests whether all of the elements match the given condition             | :white_check_mark: |            |
-| `fill`              |                                                                         |                    |            |
+| `fill`              | Fill the provided Array with a given value                              | :white_check_mark: |            |
 | `filter`            | Create a new array with all of the elements that pass a given condition | :white_check_mark: |            |
 | `find`              |                                                                         |                    |            |
 | `findIndex`         |                                                                         |                    |            |
