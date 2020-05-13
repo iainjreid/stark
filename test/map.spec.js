@@ -65,7 +65,7 @@ describe('map-clear', () => {
   
       expect(Array.from(S.Map.entries(map))).toStrictEqual([
         ['foo', '1'],
-        ['bar', '2']
+        ['bar', '2'],
       ])
     })
   })
@@ -117,7 +117,7 @@ describe('map-clear', () => {
   
       expect(Array.from(S.Map.keys(map))).toStrictEqual([
         'foo',
-        'bar'
+        'bar',
       ])
     })
   })
@@ -141,7 +141,7 @@ describe('map-clear', () => {
   
       expect(Array.from(S.Map.values(map))).toStrictEqual([
         '1',
-        '2'
+        '2',
       ])
     })
   })
