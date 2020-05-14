@@ -21,7 +21,7 @@ method exposed by JavaScript's standard built-in objects.
 | `every`             | Tests whether all of the elements match the given condition             | :white_check_mark: |            |
 | `fill`              | Fill the provided Array with a given value                              | :white_check_mark: |            |
 | `filter`            | Create a new array with all of the elements that pass a given condition | :white_check_mark: |            |
-| `find`              |                                                                         |                    |            |
+| `find`              | Get the first element in an Array that matches a given condition        | :white_check_mark: |            |
 | `findIndex`         |                                                                         |                    |            |
 | `flat`              |                                                                         |                    |            |
 | `flatMap`           |                                                                         |                    |            |

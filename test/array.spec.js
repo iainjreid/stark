@@ -38,6 +38,12 @@ describe('array-concat', () => {
     })
   })
 
+  describe('array-find', () => {
+    it('removes non-truthy elements from an array', () => {
+      expect(S.Array.filter((elem) => elem.endsWith('r'), ['foo', 'bar', 'baz'])).toEqual('bar')
+    })
+  })
+
   describe('array-map', () => {
     it('correctly maps a function over an array', () => {
       expect(S.Array.map((elem, i) => elem + i, [1, 2, 3])).toEqual([1, 3, 5])
