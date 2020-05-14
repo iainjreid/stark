@@ -39,8 +39,8 @@ describe('array-concat', () => {
   })
 
   describe('array-find', () => {
-    it('removes non-truthy elements from an array', () => {
-      expect(S.Array.filter((elem) => elem.endsWith('r'), ['foo', 'bar', 'baz'])).toEqual('bar')
+    it('finds the first element in an array that matches the given condition', () => {
+      expect(S.Array.find((elem) => elem.endsWith('r'), ['foo', 'bar', 'baz'])).toEqual('bar')
     })
   })
 
