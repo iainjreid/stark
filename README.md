@@ -13,39 +13,39 @@ method exposed by JavaScript's standard built-in objects.
 
 ### Array
 
-| Method              | Summary                                                                 | Tested             | Documented |
-| ---                 | ---                                                                     | :---:              | :---:      |
-| `concat`            | Merge two arrays                                                        | :white_check_mark: |            |
-| `copyWithin`        | Shallow copy part of an array to another location in that array         | :white_check_mark: |            |
-| `entries`           | Retrieve an iterator from an array                                      | :white_check_mark: |            |
-| `every`             | Tests whether all of the elements match the given condition             | :white_check_mark: |            |
-| `fill`              | Fill the provided Array with a given value                              | :white_check_mark: |            |
-| `filter`            | Create a new array with all of the elements that pass a given condition | :white_check_mark: |            |
-| `find`              | Get the first element in an Array that matches a given condition        | :white_check_mark: |            |
-| `findIndex`         |                                                                         |                    |            |
-| `flat`              |                                                                         |                    |            |
-| `flatMap`           |                                                                         |                    |            |
-| `forEach`           |                                                                         |                    |            |
-| `includes`          |                                                                         |                    |            |
-| `indexOf`           |                                                                         |                    |            |
-| `join`              |                                                                         |                    |            |
-| `keys`              |                                                                         |                    |            |
-| `lastIndexOf`       |                                                                         |                    |            |
-| `map`               | Apply a function over each element in an array                          | :white_check_mark: |            |
-| `pop`               |                                                                         |                    |            |
-| `push`              |                                                                         |                    |            |
-| `reduce`            | Reduce an array to a single output value                                | :white_check_mark: |            |
-| `reduceRight`       |                                                                         |                    |            |
-| `reverse`           |                                                                         |                    |            |
-| `shift`             |                                                                         |                    |            |
-| `slice`             |                                                                         |                    |            |
-| `some`              | Tests that none of the element match the given condition                | :white_check_mark: |            |
-| `sort`              |                                                                         |                    |            |
-| `splice`            |                                                                         |                    |            |
-| `toLocaleString`    |                                                                         |                    |            |
-| `toString`          |                                                                         |                    |            |
-| `unshift`           |                                                                         |                    |            |
-| `values`            |                                                                         |                    |            |
+| Method              | Summary                                                                       | Tested             | Documented |
+| ---                 | ---                                                                           | :---:              | :---:      |
+| `concat`            | Merge two arrays                                                              | :white_check_mark: |            |
+| `copyWithin`        | Shallow copy part of an array to another location in that array               | :white_check_mark: |            |
+| `entries`           | Retrieve an iterator from an array                                            | :white_check_mark: |            |
+| `every`             | Tests whether all of the elements match the given condition                   | :white_check_mark: |            |
+| `fill`              | Fill the provided Array with a given value                                    | :white_check_mark: |            |
+| `filter`            | Create a new array with all of the elements that pass a given condition       | :white_check_mark: |            |
+| `find`              | Get the first element in an Array that matches a given condition              | :white_check_mark: |            |
+| `findIndex`         | Get the index of the first element in an Array that matches a given condition | :white_check_mark: |            |
+| `flat`              | Flattens the elements in an Array by a given depth                            | :white_check_mark: |            |
+| `flatMap`           |                                                                               |                    |            |
+| `forEach`           |                                                                               |                    |            |
+| `includes`          |                                                                               |                    |            |
+| `indexOf`           |                                                                               |                    |            |
+| `join`              |                                                                               |                    |            |
+| `keys`              |                                                                               |                    |            |
+| `lastIndexOf`       |                                                                               |                    |            |
+| `map`               | Apply a function over each element in an array                                | :white_check_mark: |            |
+| `pop`               |                                                                               |                    |            |
+| `push`              |                                                                               |                    |            |
+| `reduce`            | Reduce an array to a single output value                                      | :white_check_mark: |            |
+| `reduceRight`       |                                                                               |                    |            |
+| `reverse`           |                                                                               |                    |            |
+| `shift`             |                                                                               |                    |            |
+| `slice`             |                                                                               |                    |            |
+| `some`              | Tests that none of the element match the given condition                      | :white_check_mark: |            |
+| `sort`              |                                                                               |                    |            |
+| `splice`            |                                                                               |                    |            |
+| `toLocaleString`    |                                                                               |                    |            |
+| `toString`          |                                                                               |                    |            |
+| `unshift`           |                                                                               |                    |            |
+| `values`            |                                                                               |                    |            |
 
 ### Map
 

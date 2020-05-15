@@ -44,6 +44,32 @@ describe('array-concat', () => {
     })
   })
 
+  describe('array-findIndex', () => {
+    it('finds the first element in an array that matches the given condition', () => {
+      expect(S.Array.findIndex((elem) => elem.endsWith('z'), ['foo', 'bar', 'baz'])).toEqual(2)
+    })
+  })
+
+  describe('array-flat', () => {
+    const arr = [
+      [1],
+      [[2]],
+      [[[3]]]
+    ]
+
+    it('flattens an array with a given depth (1)', () => {
+      expect(S.Array.flat(1, arr)).toEqual([1, [2], [[3]]])
+    })
+
+    it('flattens an array with a given depth (2)', () => {
+      expect(S.Array.flat(2, arr)).toEqual([1, 2, [3]])
+    })
+
+    it('flattens an array with a given depth (3)', () => {
+      expect(S.Array.flat(3, arr)).toEqual([1, 2, 3])
+    })
+  })
+
   describe('array-map', () => {
     it('correctly maps a function over an array', () => {
       expect(S.Array.map((elem, i) => elem + i, [1, 2, 3])).toEqual([1, 3, 5])
