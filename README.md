@@ -24,8 +24,8 @@ method exposed by JavaScript's standard built-in objects.
 | `find`              | Get the first element in an Array that matches a given condition              | :white_check_mark: |            |
 | `findIndex`         | Get the index of the first element in an Array that matches a given condition | :white_check_mark: |            |
 | `flat`              | Flattens the elements in an Array by a given depth                            | :white_check_mark: |            |
-| `flatMap`           |                                                                               |                    |            |
-| `forEach`           |                                                                               |                    |            |
+| `flatMap`           | Applies a function over each element in an array and flatten the result       | :white_check_mark: |            |
+| `forEach`           | Executes the provided function for each element in an array                   | :white_check_mark: |            |
 | `includes`          |                                                                               |                    |            |
 | `indexOf`           |                                                                               |                    |            |
 | `join`              |                                                                               |                    |            |

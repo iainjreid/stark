@@ -70,6 +70,20 @@ describe('array-concat', () => {
     })
   })
 
+  describe('array-flatMap', () => {
+    it('correctly maps a function over an array and then flattens the result', () => {
+      expect(S.Array.flatMap((elem, i) => [elem, elem + i], [1, 2, 3])).toEqual([1, 1, 2, 3, 3, 5])
+    })
+  })
+
+  describe('array-forEach', () => {
+    it('executes the provided function for each element in an array', () => {
+      let acc = 0
+      S.Array.forEach((elem) => acc += elem, [1, 2, 3])
+      expect(acc).toEqual(6)
+    })
+  })
+
   describe('array-map', () => {
     it('correctly maps a function over an array', () => {
       expect(S.Array.map((elem, i) => elem + i, [1, 2, 3])).toEqual([1, 3, 5])
