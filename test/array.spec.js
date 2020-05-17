@@ -112,6 +112,12 @@ describe('array-concat', () => {
     })
   })
 
+  describe('array-join', () => {
+    it('joins elements in an array with the provided string', () => {
+      expect(S.Array.join('-', ['foo', 'bar', 'baz'])).toEqual('foo-bar-baz')
+    })
+  })
+
   describe('array-map', () => {
     it('correctly maps a function over an array', () => {
       expect(S.Array.map((elem, i) => elem + i, [1, 2, 3])).toEqual([1, 3, 5])
