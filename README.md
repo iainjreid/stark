@@ -26,7 +26,7 @@ method exposed by JavaScript's standard built-in objects.
 | `flat`              | Flattens the elements in an Array by a given depth                            | :white_check_mark: |            |
 | `flatMap`           | Applies a function over each element in an array and flatten the result       | :white_check_mark: |            |
 | `forEach`           | Executes the provided function for each element in an array                   | :white_check_mark: |            |
-| `includes`          |                                                                               |                    |            |
+| `includes`          | Returns true if a given value is in an array                                  | :white_check_mark: |            |
 | `indexOf`           |                                                                               |                    |            |
 | `join`              |                                                                               |                    |            |
 | `keys`              |                                                                               |                    |            |

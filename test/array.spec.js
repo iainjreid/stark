@@ -84,6 +84,20 @@ describe('array-concat', () => {
     })
   })
 
+  describe('array-includes', () => {
+    it('returns true if the given value is in an array (1)', () => {
+      expect(S.Array.includes('foo', ['foo', 'bar'])).toEqual(true)
+    })
+
+    it('returns true if the given value is in an array (2)', () => {
+      expect(S.Array.includes('bar', ['foo', 'bar'])).toEqual(true)
+    })
+
+    it('returns true if the given value is in an array (3)', () => {
+      expect(S.Array.includes('baz', ['foo', 'bar'])).toEqual(false)
+    })
+  })
+
   describe('array-map', () => {
     it('correctly maps a function over an array', () => {
       expect(S.Array.map((elem, i) => elem + i, [1, 2, 3])).toEqual([1, 3, 5])
