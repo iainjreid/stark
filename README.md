@@ -27,7 +27,7 @@ method exposed by JavaScript's standard built-in objects.
 | `flatMap`           | Applies a function over each element in an array and flatten the result       | :white_check_mark: |            |
 | `forEach`           | Executes the provided function for each element in an array                   | :white_check_mark: |            |
 | `includes`          | Returns true if a given value is in an array                                  | :white_check_mark: |            |
-| `indexOf`           |                                                                               |                    |            |
+| `indexOf`           | Returns the first index if a value can be found in the array, or -1           | :white_check_mark: |            |
 | `join`              |                                                                               |                    |            |
 | `keys`              |                                                                               |                    |            |
 | `lastIndexOf`       |                                                                               |                    |            |

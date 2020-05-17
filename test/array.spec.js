@@ -98,6 +98,20 @@ describe('array-concat', () => {
     })
   })
 
+  describe('array-indexOf', () => {
+    it('returns the index of an element if found (1)', () => {
+      expect(S.Array.indexOf('foo', ['foo', 'bar'])).toEqual(0)
+    })
+
+    it('returns the index of an element if found (2)', () => {
+      expect(S.Array.indexOf('bar', ['foo', 'bar'])).toEqual(1)
+    })
+
+    it('returns -1 if an element is not found', () => {
+      expect(S.Array.indexOf('baz', ['foo', 'bar'])).toEqual(-1)
+    })
+  })
+
   describe('array-map', () => {
     it('correctly maps a function over an array', () => {
       expect(S.Array.map((elem, i) => elem + i, [1, 2, 3])).toEqual([1, 3, 5])
