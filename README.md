@@ -1,151 +1,70 @@
 # Stark
 
-**This library is currently under active development, and until a given method
-is covered in the tests we can't be sure of it stability. This is because we're
-using meta-programming techniques within Stark that allow for a large number of
-unknowns that only usage of the library can reveal.**
+## Introduction
 
-## Library coverage
+Stark is a functional programming library that wraps all of the core JavaScript
+built-in objects with a tiny, but hugely powerful functional wrapper. Weighing
+less than 1KB when minified, and exposing almost 300 methods, Stark is the one
+of the lightest functional programming libraries around.
 
-Below is a short excerpt from the official documentation outlining the current
-testing and documentation efforts. In reality, Stark covers every instance
-method exposed by JavaScript's standard built-in objects.
+## Features
 
-### Array
+* Built-in currying and partial application.
+* No variadic functions in sight.
+* Argument flipping out of the box.
 
-| Method              | Summary                                                                       | Tested             | Documented |
-| ---                 | ---                                                                           | :---:              | :---:      |
-| `concat`            | Merge two arrays                                                              | :white_check_mark: |            |
-| `copyWithin`        | Shallow copy part of an array to another location in that array               | :white_check_mark: |            |
-| `entries`           | Retrieve an iterator from an array                                            | :white_check_mark: |            |
-| `every`             | Tests whether all of the elements match the given condition                   | :white_check_mark: |            |
-| `fill`              | Fill the provided Array with a given value                                    | :white_check_mark: |            |
-| `filter`            | Create a new array with all of the elements that pass a given condition       | :white_check_mark: |            |
-| `find`              | Get the first element in an Array that matches a given condition              | :white_check_mark: |            |
-| `findIndex`         | Get the index of the first element in an Array that matches a given condition | :white_check_mark: |            |
-| `flat`              | Flattens the elements in an Array by a given depth                            | :white_check_mark: |            |
-| `flatMap`           | Applies a function over each element in an array and flatten the result       | :white_check_mark: |            |
-| `forEach`           | Executes the provided function for each element in an array                   | :white_check_mark: |            |
-| `includes`          | Returns true if a given value is in an array                                  | :white_check_mark: |            |
-| `indexOf`           | Returns the first index if a value can be found in the array, or -1           | :white_check_mark: |            |
-| `join`              |                                                                               |                    |            |
-| `keys`              |                                                                               |                    |            |
-| `lastIndexOf`       |                                                                               |                    |            |
-| `map`               | Apply a function over each element in an array                                | :white_check_mark: |            |
-| `pop`               |                                                                               |                    |            |
-| `push`              |                                                                               |                    |            |
-| `reduce`            | Reduce an array to a single output value                                      | :white_check_mark: |            |
-| `reduceRight`       |                                                                               |                    |            |
-| `reverse`           |                                                                               |                    |            |
-| `shift`             |                                                                               |                    |            |
-| `slice`             |                                                                               |                    |            |
-| `some`              | Tests that none of the element match the given condition                      | :white_check_mark: |            |
-| `sort`              |                                                                               |                    |            |
-| `splice`            |                                                                               |                    |            |
-| `toLocaleString`    |                                                                               |                    |            |
-| `toString`          |                                                                               |                    |            |
-| `unshift`           |                                                                               |                    |            |
-| `values`            |                                                                               |                    |            |
+## Using Stark
 
-### Map
+To use Stark in your project you should first install it as a dependency.
 
-| Method    | Summary                                                                                                               | Tested             | Documented |
-| ---       | ---                                                                                                                   | :---:              | :---:      |
-| `clear`   | Removes all of the elements from a Map object                                                                         | :white_check_mark: |            |
-| `delete`  | Removes a specified element from a Map object, returning true if the element existed and false if the element did not | :white_check_mark: |            |
-| `entries` | Creates a new Iterator containing an array of `[key, value]` for each element in a Map object                         | :white_check_mark: |            |
-| `forEach` | Calls the given callback function once for every key value pair in a Map object                                       | :white_check_mark: |            |
-| `get`     | Return a specified element from a Map object                                                                          | :white_check_mark: |            |
-| `has`     | Returns a boolean indicating whether or not the given key exists in a Map object                                      | :white_check_mark: |            |
-| `keys`    | Creates a new Iterator containing each key in a Map object                                                            | :white_check_mark: |            |
-| `set`     | Assign or update a specified element in a Map object                                                                  | :white_check_mark: |            |
-| `values`  | Creates a new Iterator containing each value in a Map object                                                          | :white_check_mark: |            |
+```bash
+# For NPM users
+npm i @emphori/stark
 
-### Number
+# Or, for Yarn users
+yarn add @emphori/stark
+```
 
-| Method              | Summary                                                                 | Tested             | Documented |
-| ---                 | ---                                                                     | :---:              | :---:      |
-| `toExponential`     |                                                                         |                    |            |
-| `toFixed`           |                                                                         |                    |            |
-| `toLocaleString`    |                                                                         |                    |            |
-| `toPrecision`       |                                                                         |                    |            |
-| `toString`          |                                                                         |                    |            |
-| `valueOf`           |                                                                         |                    |            |
+### Unpacking the library
 
-### Promise
+Stark organises its methods according to the type of data that they operate on,
+for example, the `map` method can be found at `S.Array.map`, the `startsWith`
+method can be found at `S.String.startsWith`, etc.
 
-| Method              | Summary                                                                 | Tested             | Documented |
-| ---                 | ---                                                                     | :---:              | :---:      |
-| `catch`             |                                                                         |                    |            |
-| `finally`           |                                                                         |                    |            |
-| `then`              |                                                                         |                    |            |
+Whilst the simplest way to get started would be to reference each method using
+their full lookup paths like in the examples above, unpacking the methods you
+need before using them is a useful trick.
 
-### Set
+```javascript
+const stark = require('@emphori/stark')
 
-| Method              | Summary                                                                 | Tested             | Documented |
-| ---                 | ---                                                                     | :---:              | :---:      |
-| `add`               |                                                                         |                    |            |
-| `clear`             |                                                                         |                    |            |
-| `delete`            |                                                                         |                    |            |
-| `entries`           |                                                                         |                    |            |
-| `forEach`           |                                                                         |                    |            |
-| `has`               |                                                                         |                    |            |
-| `keys`              |                                                                         |                    |            |
-| `values`            |                                                                         |                    |            |
+const {
+  Array: { map },
+  String: { startsWith },
+} = stark
+```
 
-### String
+## FAQ
 
-| Method              | Summary                                                                 | Tested             | Documented |
-| ---                 | ---                                                                     | :---:              | :---:      |
-| `charAt`            |                                                                         |                    |            |
-| `charCodeAt`        |                                                                         |                    |            |
-| `codePointAt`       |                                                                         |                    |            |
-| `concat`            |                                                                         |                    |            |
-| `endsWith`          |                                                                         |                    |            |
-| `includes`          |                                                                         |                    |            |
-| `indexOf`           |                                                                         |                    |            |
-| `lastIndexOf`       |                                                                         |                    |            |
-| `localeCompare`     |                                                                         |                    |            |
-| `match`             |                                                                         |                    |            |
-| `matchAll`          |                                                                         |                    |            |
-| `normalize`         |                                                                         |                    |            |
-| `padEnd`            |                                                                         |                    |            |
-| `padStart`          |                                                                         |                    |            |
-| `repeat`            |                                                                         |                    |            |
-| `replace`           |                                                                         |                    |            |
-| `search`            |                                                                         |                    |            |
-| `slice`             |                                                                         |                    |            |
-| `split`             |                                                                         |                    |            |
-| `startsWith`        |                                                                         |                    |            |
-| `substring`         |                                                                         |                    |            |
-| `toLocaleLowerCase` |                                                                         |                    |            |
-| `toLocaleUpperCase` |                                                                         |                    |            |
-| `toLowerCase`       |                                                                         |                    |            |
-| `toString`          |                                                                         |                    |            |
-| `toUpperCase`       |                                                                         |                    |            |
-| `trim`              |                                                                         |                    |            |
-| `trimEnd`           |                                                                         |                    |            |
-| `trimLeft`          |                                                                         |                    |            |
-| `trimRight`         |                                                                         |                    |            |
-| `trimStart`         |                                                                         |                    |            |
-| `valueOf`           |                                                                         |                    |            |
+### Why should I avoid unpacking Stark when requiring it?
 
-### WeakMap
+Stark is a dynamically built library from the ground up and doesn't declare any
+named exports, only a default export. So to answer this question is to relay a
+key distinction between [ESM imports][2] and [object destructuring][2].
 
-| Method              | Summary                                                                 | Tested             | Documented |
-| ---                 | ---                                                                     | :---:              | :---:      |
-| `delete`            |                                                                         |                    |            |
-| `get`               |                                                                         |                    |            |
-| `has`               |                                                                         |                    |            |
-| `set`               |                                                                         |                    |            |
+```javascript
+// ✔️ CommonJS (works)
+const { Array: { map } } = require('@emphori/stark')
 
-### WeakSet
+// ❌ ESM imports (doesn't work)
+import { Array: { map } } from '@emphori/stark'
+```
 
-| Method              | Summary                                                                 | Tested             | Documented |
-| ---                 | ---                                                                     | :---:              | :---:      |
-| `add`               |                                                                         |                    |            |
-| `delete`            |                                                                         |                    |            |
-| `has`               |                                                                         |                    |            |
+[1]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export
+[2]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+
+As you can see in the example above, CommonJS introps nicely with the
+structuring of Stark's internals, but ESM imports sadly do not.
 
 ## License
 
