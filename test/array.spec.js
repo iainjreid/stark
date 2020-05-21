@@ -118,6 +118,26 @@ describe('array-join', () => {
   })
 })
 
+describe('array-keys', () => {
+  it('returns a new array itterator with the keys from the provided array', () => {
+    expect(Array.from(S.Array.keys(['foo', 'bar', 'baz']))).toEqual([0, 1, 2])
+  })
+})
+
+describe('array-lastIndexOf', () => {
+  it('returns the last index of an element if found (1)', () => {
+    expect(S.Array.lastIndexOf('foo', ['foo', 'bar', 'foo'])).toEqual(2)
+  })
+  
+  it('returns the last index of an element if found (2)', () => {
+    expect(S.Array.lastIndexOf('bar', ['foo', 'bar', 'foo'])).toEqual(1)
+  })
+
+  it('returns -1 if an element is not found', () => {
+    expect(S.Array.indexOf('baz', ['foo', 'bar', 'foo'])).toEqual(-1)
+  })
+})
+
 describe('array-map', () => {
   it('correctly maps a function over an array', () => {
     expect(S.Array.map((elem, i) => elem + i, [1, 2, 3])).toEqual([1, 3, 5])
