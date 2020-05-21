@@ -128,13 +128,13 @@ describe('array-lastIndexOf', () => {
   it('returns the last index of an element if found (1)', () => {
     expect(S.Array.lastIndexOf('foo', ['foo', 'bar', 'foo'])).toEqual(2)
   })
-  
+
   it('returns the last index of an element if found (2)', () => {
     expect(S.Array.lastIndexOf('bar', ['foo', 'bar', 'foo'])).toEqual(1)
   })
 
   it('returns -1 if an element is not found', () => {
-    expect(S.Array.indexOf('baz', ['foo', 'bar', 'foo'])).toEqual(-1)
+    expect(S.Array.lastIndexOf('baz', ['foo', 'bar', 'foo'])).toEqual(-1)
   })
 })
 
