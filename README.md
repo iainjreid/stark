@@ -2,15 +2,31 @@
 
 ## Introduction
 
-Stark is a functional programming library that wraps all of the core JavaScript
-built-in objects with a tiny, but hugely powerful functional wrapper. Weighing
-less than 1KB when minified, and exposing almost 300 methods, Stark is the one
-of the lightest functional programming libraries around.
+Stark is a simple library that turns the JavaScript built-in objects into
+individual suites of composable, functional methods. It's tiny (around 1KB) and
+unopinionated.
+
+It works by flipping the methods exposed through the prototypes of every
+built-in object, so that they expect the subject of the operation to appear at
+the _end_ of the arguments list. Here's a working comparison...
+
+```javascript
+const arr = ['hello', 'world']
+
+# Plain JavaScript
+arr.join(' ') //  => "hello world"
+
+# With Stark
+join(' ', arr) // => "hello world"
+```
+
+You can think of Stark as a sort of packet mix, providing the core ingredients
+required to build a fully-fledged functional programming library.
 
 ## Features
 
 * Built-in currying and partial application.
-* No variadic functions in sight.
+* Not a single variadic function in sight.
 * Argument flipping out of the box.
 
 ## Using Stark
