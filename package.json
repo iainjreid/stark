@@ -10,7 +10,7 @@
   "license": "MIT",
   "main": "lib/stark.js",
   "files": [
-    "lib/stark.js"
+    "lib"
   ],
   "scripts": {
     "lint": "eslint .",
@@ -19,8 +19,8 @@
   "devDependencies": {
     "@emphori/eslint-config": "^0.1.7",
     "@emphori/jest-preset": "0.0.5",
-    "eslint": "^7.0.0",
-    "jest": "^26.0.1"
+    "eslint": "^7.11.0",
+    "jest": "^26.5.3"
   },
   "publishConfig": {
     "access": "public"
